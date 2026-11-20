@@ -1,0 +1,5 @@
+NeonGlass/
+local/
+personal.json
+dist/
+__pycache__/
