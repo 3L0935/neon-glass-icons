@@ -66,7 +66,7 @@ MIRRORS = {
                 activate=lambda: gsr_cli("toggle-show"), secondary=lambda: gsr_cli("toggle-record")),
     "discord": dict(title="Discord", match_id="discord_status_icon", refs=discord_refs,
                     icon="neonglass-discord-tray{state}", default=""),
-    "heroic": dict(title="Heroic Games Launcher", match_cmdline="heroic-games-launcher", refs=lambda: {},
+    "heroic": dict(title="Heroic Games Launcher", match_id="heroic_status_icon", refs=lambda: {},
                    icon="neonglass-heroic-tray{state}", default=""),
 }
 

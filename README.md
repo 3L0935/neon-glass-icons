@@ -56,7 +56,7 @@ cp extras/tray-mirror/neonglass-tray-mirror.service ~/.config/systemd/user/
 systemctl --user enable --now neonglass-tray-mirror.service
 ```
 
-Then hide the apps' own entries in the tray settings (System Tray → Entries → set them to Hidden).
+Then hide the apps' own entries in the tray settings (System Tray → Entries → set them to Hidden). Their ids, for the `hiddenItems` key of the tray config: `discord_status_icon_1`, `heroic_status_icon_1`, `gpu-screen-recorder-ui`.
 
 ## Credits and license
 
