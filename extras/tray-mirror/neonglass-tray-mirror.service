@@ -1,0 +1,12 @@
+[Unit]
+Description=NeonGlass tray icons for apps that send raw images (GPU Screen Recorder, Discord, Heroic)
+PartOf=graphical-session.target
+After=plasma-plasmashell.service
+
+[Service]
+ExecStart=/usr/bin/python3 -I %h/.local/share/neonglass/neonglass-tray-mirror.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

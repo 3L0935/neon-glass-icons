@@ -47,7 +47,16 @@ The `.json` files are committed, so building only needs Python 3. The trace scri
 
 ## Extras
 
-`extras/gsr-tray/` is a tray item for GPU Screen Recorder. Its own tray icon is a raw image, so no icon theme can restyle it. This item shows the state (idle, recording, paused) with NeonGlass icons and relays the app's real menu.
+`extras/tray-mirror/` handles apps whose tray icon is a raw image, which no icon theme can restyle: Discord, Heroic and GPU Screen Recorder. For each of them, it shows a tray item of its own with NeonGlass icons. That item follows the app's state (Discord: unread, in a call, speaking, muted, deafened; GSR: idle, recording, paused) and relays the app's real menu and clicks.
+
+```sh
+mkdir -p ~/.local/share/neonglass ~/.config/systemd/user
+cp extras/tray-mirror/neonglass-tray-mirror.py ~/.local/share/neonglass/
+cp extras/tray-mirror/neonglass-tray-mirror.service ~/.config/systemd/user/
+systemctl --user enable --now neonglass-tray-mirror.service
+```
+
+Then hide the apps' own entries in the tray settings (System Tray → Entries → set them to Hidden).
 
 ## Credits and license
 

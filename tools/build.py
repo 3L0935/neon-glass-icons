@@ -104,6 +104,14 @@ PANEL = {
     ("t-gsr", ""):          ["com.dec05eba.gpu_screen_recorder.tray-idle"],
     ("t-gsr", "red"):       ["com.dec05eba.gpu_screen_recorder.tray-recording"],
     ("t-gsr", "yellow"):    ["com.dec05eba.gpu_screen_recorder.tray-paused"],
+    # mirrored by extras/tray-mirror (Discord and Heroic send images, not icon names)
+    ("discord", ""):        ["neonglass-discord-tray"],
+    ("discord", "pink"):    ["neonglass-discord-tray-unread"],
+    ("discord", "cyan"):    ["neonglass-discord-tray-connected"],
+    ("discord", "mint"):    ["neonglass-discord-tray-speaking"],
+    ("discord", "yellow"):  ["neonglass-discord-tray-muted"],
+    ("discord", "slash"):   ["neonglass-discord-tray-deafened"],
+    ("heroic", ""):         ["neonglass-heroic-tray"],
 }
 
 
