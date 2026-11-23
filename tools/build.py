@@ -67,6 +67,12 @@ APPS = {
     "haruna":      ("media", ["haruna", "org.kde.haruna"]),
     "cachy":       ("sys",   ["org.cachyos.hello", "cachyos-hello"]),
     "partition":   ("sys",   ["partitionmanager", "org.kde.partitionmanager"]),
+    "lutris":      ("game",  ["net.lutris.Lutris", "lutris"]),
+    # categories / launcher entries (Kando, menus); folder glyphs reused as app tiles
+    "f-games":     ("game",  ["applications-games", "input-gaming"]),
+    "f-music":     ("media", ["applications-multimedia", "audio-player", "multimedia-player"]),
+    "tools":       ("sys",   ["applications-utilities", "applications-system"]),
+    "paste":       ("sys",   ["neonglass-clipboard"]),
 }
 # personal apps: left out of the public build
 APPS.update({k: (v[0], v[1]) for k, v in PERSONAL_DATA.get("apps", {}).items()})
